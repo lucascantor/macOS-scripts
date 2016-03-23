@@ -21,4 +21,5 @@ if [ "$LOGGEDINUSER" != "$exemptAccount1" ]; then
             echo "<result>Enforced</result>"
         fi
 fi
+
 exit 0

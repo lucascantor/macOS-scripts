@@ -10,3 +10,5 @@ then
 else
     echo "<result>Enabled</result>"
 fi
+
+exit 0

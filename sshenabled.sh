@@ -9,4 +9,5 @@ if [ "$STATUS" == "Remote Login: On" ]; then
 else
         echo "<result>Disabled</result>"
 fi
+
 exit 0

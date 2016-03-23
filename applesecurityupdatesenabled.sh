@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#Script to verify the status of Auto Updates
-#to ensure Critical and Security updates are applied
+# Script to verify the status of Auto Updates
+# to ensure Critical and Security updates are applied
 
 ### Check for schedule, critical and config settings
 schedule_status=$(softwareupdate --schedule)
@@ -14,12 +14,12 @@ schedule_on="Automatic check is on"
 critical_on="1"
 config_on="1"
 
-
+### Compare current settings to desired settings
 if [ "$schedule_status" == "$schedule_on" ] && [ "$critical_status" == "$critical_on" ] && [ "$config_status" == "$config_on" ]; then
 
-    result="Enabled"
+    echo "<result>Enabled</result>"
 else
-    result="Disabled"
+    echo "<result>Disabled</result>"
 fi
 
-echo "<result>$result</result>"
+exit 0

@@ -4,7 +4,9 @@
 
 if [ -f /Library/Application\ Support/Google/Chrome/External\ Extensions/EXTENSION_ID_HERE.json ]
 then
-	echo "<result>deployed</result>"
+	echo "<result>Deployed</result>"
 else
-	echo "<result>not-deployed</result>"
+	echo "<result>Not-Deployed</result>"
 fi
+
+exit 0

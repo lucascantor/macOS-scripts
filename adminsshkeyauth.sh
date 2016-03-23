@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Remove pre-existing authorized_keys file if present
+rm /var/administrator/.ssh/authorized_keys
+
+# Create /var/administrator/.ssh directory if needed
+mkdir -p /var/administrator/.ssh
+
+# Append ssh public key to administrator's authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD5LZmTQyfmLK8IdMCk8HJeVGo0r3MOguHZg3g+fszmAUgcJeLz0IGUimRJw7GwBWqajAOCQz0jdMoU9YrpvbB17/ujxswGxSNZrBld0VlUbmH4R7H+OSIU02J4jRYN5Pr6h1tP0OyCTq8uEEgs2X8VHBYg5d5StIRVRDNUG8K6dSiqkYec6pAxdceQtPohBVwk69QrzWFUTWWG5VI7q9aa4kT56QTZnvHld4x45V44hBLJrP/kNo00NzT5qAhoQK6S/oNqDj4Zk3LNewuOqVCDofIK1jTZthBR8b/+8M7gaH1rIAy0S8yBufzbggJbDUFL/9b4FqLCXIO13Q1MJ9v+bCozii8fM83Clr7JVdF8FwEx2aYdsIO2UQB7ElZh6XIqGauiGOycp+XYa5YzdFDlnO9NITHPVqDeYS8SnPJSnRwY5bmE+4gtwFthLIcDgFik04z/lzBnr88nTx/ZWP+9LK3UQpkH1009hJeU/bl9ZLz16aw251Ebg/Tvc35u92MHDO6gH8x2qPM28ztSveMniVaomLx1S6gS3VhstqXihsdoa7mE5urrA+7hKk1WNzMQRsTgyk/DCwSVv9kcernqMbbrRGwuDh+74mgbJkodMFZJpzdqBgwuAwiPEzSUz7cVwfJFMCTQBX3ejOCb2ThqmdlqyQ9l0Ml6WSRtLsjoTQ== lucas.cantor@luciddg.com" >> /var/administrator/.ssh/authorized_keys

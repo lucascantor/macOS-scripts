@@ -6,7 +6,7 @@
 schedule_status=$(softwareupdate --schedule)
 app_store_status=$(defaults read /Library/Preferences/com.apple.commerce AutoUpdate 2>/dev/null)
 os_x_status=$(defaults read /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired 2>/dev/null)
-run_config=$(softwareupdate --background-critical)
+run_config=$(softwareupdate --background)
 
 ### Desired settings for schedule, critical and config
 schedule_on="Automatic check is on"

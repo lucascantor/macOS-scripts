@@ -4,9 +4,9 @@
 
 if [ $(find /Users/lucas/ -mtime -1 -type f -name ".dead_mans_switch" 2>/dev/null) ]
 then
-	echo "Dead man\'s switch touched today."
+	echo "Dead mans switch touched today."
 else
-	echo "Dead man\'s switch NOT touched today."
+	echo "Dead mans switch NOT touched today."
 fi
 
 exit 0

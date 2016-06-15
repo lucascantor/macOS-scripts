@@ -7,7 +7,7 @@ then
 	echo "Dead mans switch touched today."
 else
 	echo "Dead mans switch NOT touched today. Shutting down now."
-	/sbin/shutdown now
+	/sbin/shutdown -h now
 fi
 
 exit 0
